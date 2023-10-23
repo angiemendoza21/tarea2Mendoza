@@ -1,0 +1,1311 @@
+//Ejercicio 1
+//  Leer un carácter y deducir si está o no comprendido entre las  letras 'a'... 'z' y 'A'...'Z'.
+//    ambas inclusive y sino verificar si es un signo de puntuacion ", . ; :" y si no presentar solo el caracter.
+//Definir cart Como Caracter: Aquí se está definiendo una variable llamada cart que almacenará un carácter.
+//Escribir "Presentar un caracter": Esta línea muestra el mensaje "Presentar un caracter" al usuario.
+//Leer cart: Esta línea toma un carácter ingresado por el usuario y lo almacena en la variable cart.
+//si (cart >= "a" y cart <= "z") o (cart >="A" y cart <= "Z") Entonces: Este es un condicional que verifica si el carácter ingresado 
+//por el usuario es una letra del alfabeto (ya sea mayúscula o minúscula).
+//Escribir "Es una consonante= " + cart: Si la condición anterior es verdadera, entonces se asume que el carácter es una consonante y se muestra este mensaje al usuario.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el carácter es una letra) es falsa.
+//si (cart = "." o cart = "," o cart= ";" o cart= ":") Entonces: Este condicional verifica si el carácter ingresado por el usuario es uno de los siguientes signos de puntuación: punto, coma, punto y coma o dos puntos.
+//Escribir "Es un signo de puntuacion": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+Funcion Ejercicio1()
+	Definir cart Como Caracter
+	Escribir "Presentar un caracter"
+	Leer cart
+	si (cart >= "a" y cart <= "z") o (cart >="A" y cart <= "Z") Entonces
+		Escribir "Es una consonante= " + cart
+	SiNo
+		si (cart = "." o cart = "," o cart= ";" o cart= ":") Entonces
+			Escribir "Es un signo de puntuacion"
+		FinSi
+	FinSi
+FinFuncion
+//Ejercicio2
+//Leer un carácter y deducir si este es un numero(0..9) o una vocal(a,e,i,o,u).
+//Funcion Ejercicio2()`: Esta línea define una función llamada `Ejercicio2`.
+//`Definir cart Como Caracter`: Aquí se está definiendo una variable llamada `cart` que almacenará un carácter.
+//Escribir "Presentar caracter"`: Esta línea muestra el mensaje "Presentar caracter" al usuario.
+//leer cart`: Esta línea toma un carácter ingresado por el usuario y lo almacena en la variable `cart`.
+//`si (cart >= "0" y cart <= "9") Entonces`: Este es un condicional que verifica si el carácter ingresado por el usuario es un número.
+//`Escribir "Es un numero"`: Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//SiNo`: Este es otro condicional que se ejecuta si la primera condición (que verifica si el carácter es un número) es falsa.
+//`si (cart = "a" o cart = "e" o cart= "i" o cart= "o" o cart= "u") Entonces`: Este condicional verifica si el carácter ingresado por el usuario es una vocal.
+//Escribir "Es una vocal"`: Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+Funcion Ejercicio2()
+	Definir cart Como Caracter
+	Escribir "Presentar caracter"
+	leer cart
+	si (cart >= "0" y cart <= "9") Entonces
+		Escribir "Es un numero"
+	SiNo
+		si (cart = "a" o cart = "e" o cart= "i" o cart= "o" o cart= "u") Entonces
+			Escribir "Es una vocal"
+		FinSi
+	FinSi
+FinFuncion
+//Ejercicio3
+//Dado un caracter vocal presentar su respectivo valor ascii.
+//Definir voc Como Caracter: Aquí se está definiendo una variable llamada voc que almacenará un carácter.
+//Escribir "Ingresar la vocal": Esta línea muestra el mensaje "Ingresar la vocal" al usuario.
+//leer voc: Esta línea toma un carácter ingresado por el usuario y lo almacena en la variable voc.
+//Segun voc Hacer: Este es un bloque de control de flujo que selecciona una opción basada en el valor de la variable voc.
+//"a": Escribir "La vocal a tiene valor ASCII de 97": Si el valor de voc es "a", entonces se muestra este mensaje al usuario.
+//"e": Escribir "La vocal e tiene valor ASCII de 101": Si el valor de voc es "e", entonces se muestra este mensaje al usuario.
+//Y así sucesivamente para las otras vocales, tanto minúsculas como mayúsculas.
+Funcion Ejercicio3()
+	Definir voc Como Caracter
+    Escribir "Ingresar la vocal"
+	leer voc
+	Segun voc Hacer
+		"a": 
+			Escribir "La vocal a tiene valor ASCII de 97"
+		"e":
+			Escribir "La vocal e tiene valor ASCII de 101"
+		"i":
+			Escribir "La vocal i tiene valor ASCII de 105"
+		"o":
+			Escribir "La vocal o tiene valor ASCII de 111"
+		"u":
+			Escribir "La vocal u tiene valor ASCII de 117"
+		"A": 
+			Escribir "La vocal A tiene valor ASCII de 65"
+		"E":
+			Escribir "La vocal E tiene valor ASCII de 69"
+		"I":
+			Escribir "La vocal I tiene valor ASCII de 73"
+		"O":
+			Escribir "La vocal O tiene valor ASCII de 79"
+		"U":
+			Escribir "La vocal U tiene valor ASCII de 85"
+		De Otro Modo:
+			Escribir "No es una vocal"
+	Fin Segun
+FinFuncion
+//Ejercicio4
+// 4) Leer dos nombres y verificar si estos son iguales, si el primer nombre es menor.
+//Definir nomb1, nomb2 Como Cadena: Aquí se están definiendo dos variables, nomb1 y nomb2, que almacenarán cadenas de caracteres.
+//Escribir "Ingrese el primer nombre: ": Esta línea muestra el mensaje "Ingrese el primer nombre: " al usuario.
+//Leer nomb1: Esta línea toma una cadena ingresada por el usuario y la almacena en la variable nomb1.
+//Escribir "Ingrese el segundo nombre: ": Esta línea muestra el mensaje "Ingrese el segundo nombre: " al usuario.
+//Leer nomb2: Esta línea toma una cadena ingresada por el usuario y la almacena en la variable nomb2.
+//Si nomb1 = nomb2 Entonces: Este es un condicional que verifica si las dos cadenas ingresadas por el usuario son iguales.
+//Escribir "Los nombres son iguales.": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si las cadenas son iguales) es falsa.
+//Si nomb1 < nomb2 Entonces: Este condicional verifica si la cadena nomb1 es menor alfabéticamente que la cadena nomb2.
+//Escribir nomb1 + " es menor alfabéticamente que " + nomb2 + ".": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//SiNo: Este es otro condicional que se ejecuta si la segunda condición (que verifica si nomb1 es menor que nomb2) es falsa.
+//Escribir nomb2 + " es menor alfabéticamente que " + nomb1 + ".": Si la condición anterior es falsa, entonces se muestra este mensaje al usuario.
+Funcion Ejercicio4()
+	Definir nomb1, nomb2 Como Cadena
+	Escribir "Ingrese el primer nombre: "
+	Leer nomb1
+	Escribir "Ingrese el segundo nombre: "
+	Leer nomb2
+	Si nomb1 = nomb2  Entonces
+		Escribir "Los nombres son iguales."
+	SiNo
+		Si  nomb1 < nomb2 Entonces
+			Escribir nomb1 + " es menor alfabéticamente que " + nomb2 + "."
+		SiNo
+			Escribir nomb2 + " es menor alfabéticamente que " + nomb1 + "."
+		Fin Si
+	Fin Si
+FinFuncion
+//Ejercicio5
+// 5) Ingresar dos numeros y determinar si son iguales o si el primer numero es menor que el segundo dado su valor.
+//Definir num1, num2 como Entero: Aquí se están definiendo dos variables, num1 y num2, que almacenarán números enteros
+//Escribir "Ingrese el primer número:": Esta línea muestra el mensaje "Ingrese el primer número:" al usuario
+//Leer num1: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num1.
+//Escribir "Ingrese el segundo número:": Esta línea muestra el mensaje "Ingrese el segundo número:" al usuario.
+//Leer num2: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num2.
+//Si num1 = num2 Entonces: Este es un condicional que verifica si los dos números ingresados por el usuario son iguales.
+//Escribir "Los números son iguales": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//	Sino: Este es otro condicional que se ejecuta si la primera condición (que verifica si los números son iguales) es falsa.
+//	Si num1 < num2 Entonces: Este condicional verifica si el primer número es menor que el segundo.
+Funcion  Ejercicio5()
+    Definir num1, num2 como Entero
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    Si num1 = num2 Entonces
+        Escribir "Los números son iguales"
+    Sino
+        Si num1 < num2 Entonces
+            Escribir "El primer número es menor que el segundo"
+        Sino
+            Escribir "El primer número es mayor que el segundo"
+        FinSi
+    FinSi
+FinFuncion
+//Ejercicio6
+// 6) Ingresar 3 números, determinar cuál es el mayor o si son iguales.
+//Definir num1, num2, num3 Como Entero: Aquí se están definiendo tres variables, num1, num2 y num3, que almacenarán números enteros.
+//Escribir "Ingrese el primer número:": Esta línea muestra el mensaje "Ingrese el primer número:" al usuario.
+//Leer num1: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num1.
+//Escribir "Ingrese el segundo número:": Esta línea muestra el mensaje "Ingrese el segundo número:" al usuario.
+//Leer num2: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num2.
+//Escribir "Ingrese el tercer número:": Esta línea muestra el mensaje "Ingrese el tercer número:" al usuario.
+//Leer num3: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num3.
+//Si num1 > num2 Y num1 > num3 Entonces: Este es un condicional que verifica si el primer número es mayor que los otros dos.
+//Escribir "el mayor es : " , num1: Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el primer número es el mayor) es falsa.
+//Si num2 > num3 Entonces: Este condicional verifica si el segundo número es mayor que el tercero.
+//Escribir "el mayor es : " , num2: Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+
+Funcion Ejercicio6()
+	Definir num1, num2, num3 Como Entero
+	Escribir "Ingrese el primer número:"
+	Leer num1
+	Escribir "Ingrese el segundo número:"
+	Leer num2
+	Escribir "Ingrese el tercer número:"
+	Leer num3
+	Si num1 > num2 Y num1 > num3 Entonces
+		Escribir "el mayor es : " , num1
+	SiNo
+		Si num2 > num3 Entonces
+			Escribir "el mayor es : " , num2
+		SiNo
+			Escribir "el mayor es : " , num3
+		FinSi
+	FinSi
+	Si num1 = num2 Y num1 = num3 Entonces
+		Escribir "Los números son iguales."
+	FinSi
+FinFuncion
+//Ejercicio 7
+// 7) Ingresar un numero y determinar si es neutro, positivo o negativo.
+//definir num, i Como Entero: Aquí se están definiendo dos variables, num e i, que almacenarán números enteros.
+//Escribir "Ingrese un numero": Esta línea muestra el mensaje "Ingrese un numero" al usuario.
+//leer num: Esta línea toma un número ingresado por el usuario y lo almacena en la variable num.
+//Si num = 0 Entonces: Este es un condicional que verifica si el número ingresado por el usuario es cero.
+// Escribir "El numero es neutro": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el número es cero) es falsa.
+// si num > 0 Entonces: Este condicional verifica si el número ingresado por el usuario es mayor que cero.
+
+Funcion  Ejercicio7()
+	definir num, i Como Entero
+	Escribir "Ingrese un numero"
+	leer num 
+	Si num = 0 Entonces
+		Escribir "El numero es neutro"
+	SiNo
+		si num > 0 Entonces
+			Escribir "El numero es positivo"
+		SiNo
+			Escribir "El numero es negativo"
+			
+		FinSi
+	Fin Si
+FinFuncion
+//Ejercicio 8
+// 8) Determinar cuanto se debe pagar por x cantidad de lápices, considerando que si son más de 1000 el costo es de 1 , caso contrario el precio será 1,50
+//Definir cantidadLapices como entero: Aquí se está definiendo una variable llamada cantidadLapices que almacenará un número entero.
+//Definir costoLapiz como real: Aquí se está definiendo una variable llamada costoLapiz que almacenará un número real.
+//Escribir "Ingrese la cantidad de lápices:": Esta línea muestra el mensaje "Ingrese la cantidad de lápices:" al usuario.
+//Leer cantidadLapices: Esta línea toma un número ingresado por el usuario y lo almacena en la variable cantidadLapices.
+//Si cantidadLapices > 1000 Entonces: Este es un condicional que verifica si la cantidad de lápices ingresada por el usuario es mayor que 1000.
+// costoLapiz = 1: Si la condición anterior es verdadera, entonces se establece el costo del lápiz en 1.
+// SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si la cantidad de lápices es mayor que 1000) es falsa.
+// costoLapiz = 1.50: Si la condición anterior es falsa, entonces se establece el costo del lápiz en 1.50.
+Funcion  Ejercicio8()
+	Definir cantidadLapices como entero
+	Definir costoLapiz como real
+	Escribir "Ingrese la cantidad de lápices:"
+	Leer cantidadLapices
+	Si cantidadLapices > 1000 Entonces
+		costoLapiz = 1
+	SiNo
+		costoLapiz = 1.50
+	Fin Si
+	Escribir "El costo por lápiz es: ", costoLapiz
+FinFuncion
+//Ejeercicio 9
+// 9) Almacén "Somos Mas" tiene una promoción: a todos los trajes que tienen un precio superior a 2500, se les aplicará un descuento del 15%, 
+//    a todo los demás se les aplicará sólo el 8%.
+//Definir precio, descuento Como Real: Aquí se están definiendo dos variables, precio y descuento, que almacenarán números reales.
+//Escribir "Ingrese el precio del traje: ": Esta línea muestra el mensaje "Ingrese el precio del traje: " al usuario.
+//Leer precio: Esta línea toma un número ingresado por el usuario y lo almacena en la variable precio.
+//Si precio > 2500 Entonces: Este es un condicional que verifica si el precio del traje es mayor que 2500.
+// descuento <- precio * 0.15: Si la condición anterior es verdadera, entonces se calcula el descuento como el 15% del precio original.
+// SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el precio del traje es mayor que 2500) es falsa.
+//descuento <- precio * 0.08: Si la condición anterior es falsa, entonces se calcula el descuento como el 8% del precio original.
+Funcion Ejercicio9()
+	Definir precio, descuento Como Real
+	Escribir "Ingrese el precio del traje: "
+	Leer precio
+	Si precio > 2500 Entonces
+		descuento <- precio * 0.15
+	SiNo
+		descuento <- precio * 0.08
+	FinSi
+	Escribir "El descuento aplicado es: ", descuento
+FinFuncion
+//Ejercicio 10
+// 10) "Somos Mas" es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes:El costo de platillo por persona es de $95.00,
+//     pero si el número de personas es mayor a 200 pero menor o igual a 300, el costo es de $85.00. Para más de 300 personas el costo por platillo
+//     es de $75.00. Se requiere un algoritmo que ayude a determinar el presupuesto que se debe presentar a los clientes que deseen realizar un evento.
+//Definir NumeroPersonas Como Entero: Aquí se está definiendo una variable llamada NumeroPersonas que almacenará un número entero.
+//Definir PlatillosCosto , PresupuestoTotal Como Real: Aquí se están definiendo dos variables, PlatillosCosto y PresupuestoTotal, que almacenarán números reales.
+//Escribir " Numero de Personas ": Esta línea muestra el mensaje " Numero de Personas " al usuario.
+//Leer NumeroPersonas: Esta línea toma un número ingresado por el usuario y lo almacena en la variable NumeroPersonas.
+//si NumeroPersonas > 300 Entonces: Este es un condicional que verifica si el número de personas es mayor que 300.
+// PlatillosCosto = 75.00: Si la condición anterior es verdadera, entonces se establece el costo de los platillos en 75.00.
+// SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el número de personas es mayor que 300) es falsa.
+// si NumeroPersonas > 200 Entonces: Este condicional verifica si el número de personas es mayor que 200.
+// PlatillosCosto = 85.00: Si la condición anterior es verdadera, entonces se establece el costo de los platillos en 85.00.
+//  SiNo: Este es otro condicional que se ejecuta si la segunda condición (que verifica si el número de personas es mayor que 200) es falsa.
+//PlatillosCosto = 95.00: Si la condición anterior es falsa, entonces se establece el costo de los platillos en 95.00.
+Funcion Ejercicio10()
+	Definir NumeroPersonas Como Entero
+	Definir PlatillosCosto , PresupuestoTotal Como Real
+	Escribir " Numero de Personas "
+	Leer NumeroPersonas
+	si NumeroPersonas > 300 Entonces
+		PlatillosCosto = 75.00
+	SiNo
+		si NumeroPersonas > 200 Entonces
+			PlatillosCosto = 85.00
+		SiNo
+			PlatillosCosto = 95.00
+		FinSi
+	FinSi
+	PresupuestoTotal = NumeroPersonas * PlatillosCosto
+	Escribir " El Presupuesto para ",NumeroPersonas, " personas es de ",PresupuestoTotal
+FinFuncion
+//Ejercicio 11
+// 11) La asociación de vinicultores tiene como política fijar un precio inicial al kilo de uva, la cual se clasifica en tipos A y B, y además
+//     en tamaños 1 y 2.Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá
+//     un productor por la uva que entrega en un embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20¢ al precio
+//     inicial cuando es de tamaño 1; y 30¢ si es de tamaño 2. Si es de tipo B, se rebajan 30¢ cuando es de tamaño 1, y 50¢ cuando es de tamaño 2.
+//     Realice un algoritmo para determinar la ganancia obtenida.
+//Definir Tipo, tamaño Como Caracter; Definir precio_inicial, ganacia Como Real;: Aquí se están definiendo cuatro variables, Tipo y tamaño que almacenarán caracteres, y precio_inicial y ganacia que almacenarán números reales.
+//	Escribir "Ingrese el tipo de uva a comprar (A o B)"; Leer Tipo;: Estas líneas muestran el mensaje "Ingrese el tipo de uva a comprar (A o B)" al usuario y luego toman un carácter ingresado por el usuario y lo almacenan en la variable Tipo.
+// Escribir "Ingrese el tamaño de la uva a comprar (1 o 2)"; Leer tamaño;: Estas líneas muestran el mensaje "Ingrese el tamaño de la uva a comprar (1 o 2)" al usuario y luego toman un carácter ingresado por el usuario y lo almacenan en la variable tamaño.
+// Escribir "Ingrese elprecio inicial por kilo de uva: "; Leer precio_inicial;: Estas líneas muestran el mensaje "Ingrese elprecio inicial por kilo de uva: " al usuario y luego toman un número ingresado por el usuario y lo almacenan en la variable precio_inicial.
+// Si (Tipo = "A") Entonces: Este es un condicional que verifica si el tipo de uva ingresado por el usuario es "A".
+//Dentro de este bloque condicional, hay otro condicional que verifica si el tamaño de la uva es "1". Dependiendo del resultado, se calcula la ganancia sumando 0.20 o 0.30 al precio inicial.
+// SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el tipo de uva es "A") es falsa.
+
+Funcion  Ejercicio11()
+	Definir Tipo, tamaño Como Caracter;
+	Definir precio_inicial, ganacia Como Real;
+	Escribir "Ingrese el tipo de uva a comprar (A o B)";
+	Leer Tipo;
+	Escribir "Ingrese el tamaño de la uva a comprar (1 o 2)";
+	Leer tamaño;
+	Escribir "Ingrese elprecio inicial por kilo de uva: ";
+	Leer precio_inicial;
+	Si (Tipo = "A") Entonces
+		Si (tamaño = "1") Entonces
+			ganacia = precio_inicial + 0.20;
+		SiNo
+			ganacia =  precio_inicial + 0.30;
+		FinSi
+	SiNo
+		Si (tamaño = "1") Entonces
+			ganacia = precio_inicial - 0.30;
+		SiNo
+			ganacia = precio_inicial - 0.50;
+		FinSi
+	FinSi
+	Escribir "La ganacia obtenida es: ", ganacia;
+FinFuncion
+//Ejercicio 12
+// 12) El director de carrera de software está organizando un viaje de estudios,y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar
+//     a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: //si son 100 alumnos o más, el costo por cada alumno es de $65.00;
+//     de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00,sin importar
+//     el número de alumnos.Realice un algoritmo que permita determinar el pago a la compañía de autobuses y lo que debe pagar cada alumno por el viaje.
+//Definir numero_alumnos, costo_cadauno ,totalapagar como enteros: Aquí se están definiendo tres variables, numero_alumnos, costo_cadauno y totalapagar, que almacenarán números enteros.
+//Escribir " ingrese el numero de estudiantes ": Esta línea muestra el mensaje " ingrese el numero de estudiantes " al usuario.
+//leer numero_alumnos: Esta línea toma un número ingresado por el usuario y lo almacena en la variable numero_alumnos.
+//Si numero_alumnos>=100 Entonces: Este es un condicional que verifica si el número de estudiantes es mayor o igual a 100.
+//costo_cadauno=65.00: Si la condición anterior es verdadera, entonces se establece el costo por estudiante en 65.00.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si el número de estudiantes es mayor o igual a 100) es falsa.
+//Dentro de este bloque condicional, hay otros condicionales anidados que verifican si el número de estudiantes es mayor o igual a 50 o 30, y establecen el costo por estudiante en consecuencia.
+//Si ninguna de las condiciones anteriores es verdadera, entonces se establece el costo por estudiante en 4000.00.
+Funcion Ejercicio12()
+	Definir numero_alumnos, costo_cadauno ,totalapagar como enteros
+	Escribir " ingrese el numero de estudiantes "
+	leer numero_alumnos
+	Si numero_alumnos>=100 Entonces
+		costo_cadauno=65.00
+	SiNo
+		Si numero_alumnos>=50 Entonces
+			costo_cadauno=70.00
+		SiNo
+			Si numero_alumnos>=30 Entonces
+				costo_cadauno=95.00
+			SiNo
+				costo_cadauno=4000.00
+			Fin Si
+		Fin Si
+	Fin Si
+	totalapagar=numero_alumnos*costo_cadauno
+	Escribir "cada estudiante debe pagar ", costo_cadauno
+	Escribir "total a pagar por los servicios de la compañia ", totalapagar
+FinFuncion
+//Ejercicio 13
+// 13) Una compañía de viajes cuenta con tres tipos de autobuses (A, B y C), cada uno tiene un precio por kilómetro recorrido por persona, los costos 
+//    respectivos  son $2.0, $2.5 y $3.0. Se requiere determinar el costo total y por persona del viaje considerando que cuando éste se presupuesta 
+//    debe haber un mínimo de 20  personas, de lo contrario el cobro se realiza con base en este número límite.
+//Definir tipo_autobus Como Caracter; Definir costo_km, costo_total, costo_por_persona Como Real; Definir Num_Persona Como Entero;: Aquí se están definiendo varias variables. tipo_autobus almacenará un carácter, costo_km, costo_total y costo_por_persona almacenarán números reales, y Num_Persona almacenará un número entero.
+//	Escribir "Ingrese El tipo de autobus a viajar (A, B, C)"; Leer tipo_autobus;: Estas líneas muestran el mensaje "Ingrese El tipo de autobus a viajar (A, B, C)" al usuario y luego toman un carácter ingresado por el usuario y lo almacenan en la variable tipo_autobus.
+// Escribir "Ingrese el numero de personas a viajar"; Leer Num_Persona;: Estas líneas muestran el mensaje "Ingrese el numero de personas a viajar" al usuario y luego toman un número ingresado por el usuario y lo almacenan en la variable Num_Persona.
+// Si ( Num_Persona >= 20 ) Entonces: Este es un condicional que verifica si el número de personas es mayor o igual a 20.
+// Dentro de este bloque condicional, hay otros condicionales anidados que verifican el tipo de autobús y establecen el costo por kilómetro en consecuencia.
+Funcion  Ejercicio13()
+	Definir tipo_autobus Como Caracter;
+	Definir costo_km, costo_total, costo_por_persona Como Real;
+	Definir Num_Persona Como Entero;
+	Escribir "Ingrese El tipo de autobus a viajar (A, B, C)";
+	Leer tipo_autobus;
+	Escribir "Ingrese el numero de personas a viajar";
+	Leer Num_Persona;
+	Si ( Num_Persona >= 20 ) Entonces
+		Si (tipo_autobus = "A" o tipo_autobus = "a" ) Entonces
+			costo_km = 2.0;
+		SiNo
+			Si ( tipo_autobus = "B" o tipo_autobus = "b" ) Entonces
+				costo_km = 2.5;
+			SiNo
+				Si (tipo_autobus = "C" o tipo_autobus = "c") Entonces
+					costo_km = 3.0;
+				FinSi
+			FinSi
+		FinSi
+	SiNo
+		costo_km = 5.0;  
+	FinSi
+	costo_total = costo_km * Num_Persona;
+	costo_por_persona = costo_total / Num_Persona;
+	Escribir "El costo total del viaje es: ", costo_total;
+	Escribir "El costo por persona es: ",costo_por_persona;
+FinFuncion
+//Ejercicio 14
+// 14) Determinar cuanto se debe pagar por cierta cantidad de colas, considerando que si son más de 23 colas, el costo por unidad es de $0,50 caso 
+//     contrario el precio será 20% mas. Al costo resultante calcular el 12% del iva. Se pide presentar: cantidad comprada, el costo ´por unidad, el total 
+//     sin iva el iva y el total a pagar. 
+//Definir cantidad, costoUnitario, totalSinIVA, iva, totalAPagar Como Real: Aquí se están definiendo varias variables que almacenarán números reales.
+//costoUnitario = 0.50: Esta línea establece el costo unitario inicial en 0.50.
+//Escribir "Ingrese la cantidad de colas: ": Esta línea muestra el mensaje "Ingrese la cantidad de colas: " al usuario.
+//Leer cantidad: Esta línea toma un número ingresado por el usuario y lo almacena en la variable cantidad.
+//Si cantidad > 23 Entonces: Este es un condicional que verifica si la cantidad de colas es mayor que 23.
+//costoUnitario = 0.5: Si la condición anterior es verdadera, entonces se mantiene el costo unitario en 0.5.
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si la cantidad de colas es mayor que 23) es falsa.
+//costoUnitario = costoUnitario * 1.2: Si la condición anterior es falsa, entonces se incrementa el costo unitario en un 20%.
+//totalSinIVA = cantidad * costoUnitario: Esta línea calcula el total sin IVA multiplicando la cantidad por el costo unitario.
+//iva = totalSinIVA * 0.12: Esta línea calcula el IVA como el 12% del total sin IVA.
+//totalAPagar = totalSinIVA + iva: Finalmente, se calcula el total a pagar sumando el total sin IVA y el IVA.
+Funcion  Ejercicio14()
+    Definir cantidad, costoUnitario, totalSinIVA, iva, totalAPagar Como Real
+	costoUnitario = 0.50
+    Escribir "Ingrese la cantidad de colas: "
+    Leer cantidad
+    Si cantidad > 23 Entonces
+        costoUnitario = 0.5
+    SiNo
+        costoUnitario = costoUnitario * 1.2
+    FinSi
+    totalSinIVA = cantidad * costoUnitario
+    iva = totalSinIVA * 0.12
+    totalAPagar = totalSinIVA + iva
+    Escribir "Cantidad comprada: ", cantidad
+    Escribir "Costo por unidad: ", costoUnitario
+    Escribir "Total sin IVA: ", totalSinIVA
+    Escribir "IVA: ", iva
+    Escribir "Total a pagar: ", totalAPagar
+FinFuncion
+//Ejercicio 15
+// 15) En un Supermercado se tiene la siguiente promocion. Si se compra mas de 19 productos a estos se le aplica un descuento del 10 por ciento al 
+//     precio del producto y si se compra menos de 20 productos se le aplica un descuento del 20 por ciento al precio del producto. Al costo obtenido 
+//     se le aplica descuento adicional del 5 por ciento. Se pide presentar : cantidad comprada, el precio orginal, el descuento inicial el total, 
+//     el descuento adicional y el valor a pagar.  
+//Definir cantidad, precioOriginal, descuentoInicial, total, descuentoAdicional, valorAPagar Como Real: Aquí se están definiendo varias variables que almacenarán números reales.
+//Escribir "Ingrese la cantidad de productos comprados: ": Esta línea muestra el mensaje "Ingrese la cantidad de productos comprados: " al usuario.
+//Leer cantidad: Esta línea toma un número ingresado por el usuario y lo almacena en la variable cantidad.
+//Si cantidad > 19 Entonces: Este es un condicional que verifica si la cantidad de productos comprados es mayor que 19.
+//descuentoInicial = 0.1: Si la condición anterior es verdadera, entonces se establece el descuento inicial en 0.1 (o 10%).
+//SiNo: Este es otro condicional que se ejecuta si la primera condición (que verifica si la cantidad de productos comprados es mayor que 19) es falsa.
+//descuentoInicial = 0.2: Si la condición anterior es falsa, entonces se establece el descuento inicial en 0.2 (o 20%).
+//Escribir "Ingrese el precio original del producto: ": Esta línea muestra el mensaje "Ingrese el precio original del producto: " al usuario.
+//Leer precioOriginal: Esta línea toma un número ingresado por el usuario y lo almacena en la variable precioOriginal.
+//total = cantidad * precioOriginal: Esta línea calcula el total sin descuentos multiplicando la cantidad por el precio original.
+//total = total - (total * descuentoInicial): Esta línea aplica el descuento inicial al total.
+//descuentoAdicional = total * 0.05: Esta línea calcula un descuento adicional como el 5% del total después del descuento inicial.
+//valorAPagar = total - descuentoAdicional: Finalmente, se calcula el valor a pagar restando el descuento adicional del total.
+Funcion  Ejercicio15()
+    Definir cantidad, precioOriginal, descuentoInicial, total, descuentoAdicional, valorAPagar Como Real
+    Escribir "Ingrese la cantidad de productos comprados: "
+    Leer cantidad
+    Si cantidad > 19 Entonces
+        descuentoInicial = 0.1
+    SiNo
+        descuentoInicial = 0.2
+    FinSi
+    Escribir "Ingrese el precio original del producto: "
+    Leer precioOriginal
+    total = cantidad * precioOriginal
+    total = total - (total * descuentoInicial)
+    descuentoAdicional = total * 0.05
+    valorAPagar = total - descuentoAdicional
+    Escribir "Cantidad comprada: ", cantidad
+    Escribir "Precio original: ", precioOriginal
+    Escribir "Descuento inicial: ", total * descuentoInicial
+    Escribir "Total: ", total
+    Escribir "Descuento adicional: ", descuentoAdicional
+    Escribir "Valor a pagar: ", valorAPagar
+FinFuncion
+//Ejercicio 16
+// 16) El consultorio del Dr. Paez tiene como política cobrar la consulta con base en el número de cita, de la siguiente forma: Las tres primeras citas 
+//     a $200.00 c/u. Las siguientes dos citas a $150.00 c/u. Las tres siguientes citas a $100.00 c/u. Las restantes a $50.00 c/u, mientras dure el 
+//     tratamiento. Se requiere un algoritmo para determinar: Cuánto pagará el paciente por la cita. El monto de lo que ha pagado el paciente por el 
+//     tratamiento. Para la solución de este problema se requiere saber qué número de cita se efectuará, con el cual se podrá determinar el costo que 
+//     tendrá la consulta y cuánto se ha gastado en el tratamiento.
+//Definir numerocita Como Entero; Definir costoconsulta, montototalpagado Como Real: Aquí se están definiendo varias variables. numerocita almacenará un número entero, 
+//y costoconsulta y montototalpagado almacenarán números reales.
+//Escribir "Ingrese el numero de cita: "; leer numerocita: Estas líneas muestran el mensaje "Ingrese el numero de cita: " al usuario y luego toman un 
+//número ingresado por el usuario y lo almacenan en la variable numerocita.
+//Luego, hay una serie de condicionales anidados que verifican el número de la cita y establecen el costo de la consulta en consecuencia. 
+//Si el número de la cita es menor o igual a 3, el costo es 200.00. Si es mayor que 3 pero menor o igual a 5, el costo es 150.00. 
+//Si es mayor que 5 pero menor o igual a 8, el costo es 100.00. Y si es mayor que 8, el costo es 50.00.
+
+Funcion ejercicio16()
+	//entrada definimos variables
+	Definir numerocita Como Entero
+	Definir costoconsulta,montototalpagado Como Real
+	Escribir "Ingrese el numero de cita: "
+	leer numerocita
+	Si numerocita<= 3  Entonces
+		costoconsulta=200.00
+	SiNo
+		si numerocita <= 5 Entonces
+			costoconsulta=150.0
+		SiNo
+			si numerocita <= 8 Entonces
+				costoconsulta=100.00
+			SiNo
+				costoconsulta=50.00
+			FinSi
+		FinSi
+	Fin Si
+	montototalpagado = (3 * 200.00) + (2 * 150.00) + (3 * 100.00) + ((numerocita - 8) * 50.00) 
+	//salida
+	Escribir "El costo de la consulta es: $",costoconsulta
+	Escribir "El monto total pagado por el tratamiento es: $",montototalpagado
+FinFuncion
+//Ejercicio 17
+// 17) Fábricas "El Baraton" produce articulos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, para esto hay 
+//     que considerar lo siguiente: Costo de producción = materia prima + mano de obra + gastos de fabricación. Precio de venta = costo de producción
+//     + 45 % de costo de producción. El costo de la mano de obra se obtiene de la siguiente forma: para los productos con clave 3 o 4 se carga 75 % 
+//     del costo de la materia prima; para los que tienen clave 1 y 5 se carga 80 %, y para los que tienen clave 2 o 6, 85 %. Para calcular el gasto 
+//     de fabricación se considera que si el articulo que se va a producir tiene claves 2 o 5, este gasto representa 30 % sobre el costo de la materia 
+//     prima; si las claves son 3 o 6, representa 35 %; si las claves son 1 o 4, representa 28 %. La materia prima tiene el mismo costo para cualquier clave.
+//definir mp, prod, pv, cp, mo, gf como reales: Aquí se están definiendo varias variables que almacenarán números reales.
+//	escribir "ingrese la materia prima"; leer mp: Estas líneas muestran el mensaje "ingrese la materia prima" al usuario y luego toman un 
+//número ingresado por el usuario y lo almacenan en la variable mp.
+//escribir "ingrese la clave del producto"; leer prod: Estas líneas muestran el mensaje "ingrese la clave del producto" al usuario y 
+//luego toman un número ingresado por el usuario y lo almacenan en la variable prod.
+//Luego, hay una serie de condicionales anidados que verifican la clave del producto y calculan la mano de obra (mo) y los gastos de fabricación (gf) en consecuencia.
+//cp = mp + mo + gf: Esta línea calcula el costo de producción sumando la materia prima, la mano de obra y los gastos de fabricación.
+//pv = cp + 0.45 * cp: Esta línea calcula el precio de venta sumando al costo de producción el 45% del costo de producción.
+//Finalmente, se muestra al usuario la materia prima, la mano de obra, los gastos de fabricación, el costo de producción y el precio de venta.
+
+Funcion  Ejercicio17()
+	definir mp, prod, pv, cp, mo, gf como reales
+	escribir "ingrese la materia prima"
+	leer mp
+	escribir "ingrese la clave del producto"
+	leer prod
+	si prod=3 o prod=4 Entonces
+		mo=0.75*mp
+	sino 
+		si prod = 1 o prod = 5 Entonces
+			mo = 0.80 * mp
+		sino 
+			si prod = 2 o prod = 6 Entonces
+				mo= 0.85 * mp
+			FinSi
+			
+		FinSi
+	FinSi
+	si prod = 2 o prod = 5 Entonces
+		gf = 0.30 * mp
+	sino
+		si prod = 3 o prod = 6 Entonces
+			gf = 0.35 * mp
+		sino 
+			si prod = 1 o prod = 4 Entonces
+				gf = 0.28 * mp
+			FinSi
+		FinSi
+		
+	FinSi
+	cp = mp + mo + gf 
+	pv = cp + 0.45 * cp 
+	escribir "La materia prima es: ",mp " La mano de obra es: ", mo " El gasto de fabricacion es: ", gf " El costo de produccion es: ",cp " El precio de venta es: ", pv
+FinFuncion
+//Ejercicio 18
+//18) El banco XYZ ha decidido aumentar el límite de crédito de las tarjetas de crédito de sus clientes, para esto considera que:
+//Si su cliente tiene tarjeta tipo 1, el aumento será del 25%. si tiene tipo 2 el aumento será del 35% Si tiene tipo 3, el aumento será del 40%
+//Para cualquier otro tipo será del 50% Realizar un diagrama de flujo que ayude al banco a determinar el nuevo límite de crédito que tendrá una persona en su tarjeta
+//Definir tipotargeta como entero; Definir limitecredito, nuevolimitecredito Como Real: Aquí se están definiendo varias variables. 
+//	tipotargeta almacenará un número entero, y limitecredito y nuevolimitecredito almacenarán números reales.
+//	Escribir "Ingrese el tipo de targeta (1, 2, 3 o cualquier otro numero): "; leer tipotargeta: Estas líneas muestran el mensaje "Ingrese el tipo de targeta (1, 2, 3 o cualquier otro numero): " al usuario y 
+// luego toman un número ingresado por el usuario y lo almacenan en la variable tipotargeta.
+// Escribir "Ingrese el limite de credito actual: "; leer limitecredito: Estas líneas muestran el mensaje "Ingrese el limite de credito actual: " 
+// al usuario y luego toman un número ingresado por el usuario y lo almacenan en la variable limitecredito.
+// Luego, hay una serie de condicionales anidados que verifican el tipo de tarjeta y calculan el nuevo límite de crédito en consecuencia. 
+//Si el tipo de tarjeta es 1, se incrementa el límite de crédito en un 
+//25%. Si es 2, se incrementa en un 35%. Si es 3, se incrementa en un 40%. 
+//Y si es cualquier otro número, se incrementa en un 50%.
+
+Funcion ejercicio18()
+	//entrada definimos variables
+	Definir tipotargeta como entero
+	Definir limitecredito,nuevolimitecredito Como Real
+	Escribir "Ingrese el tipo de targeta (1, 2, 3 o cualquier otro numero): "
+	leer tipotargeta
+	Escribir "Ingrese el limite de credito actual: "
+	leer limitecredito
+
+	Si tipotargeta=1 Entonces
+		nuevolimitecredito=limitecredito+(limitecredito*0.25)
+	SiNo
+		si tipotargeta=2 Entonces
+			nuevolimitecredito=limitecredito+(limitecredito*0.35)
+		SiNo
+			si tipotargeta=3 Entonces
+				nuevolimitecredito=limitecredito+(limitecredito*0.40)
+			SiNo
+				nuevolimitecredito=limitecredito+(limitecredito*0.50)
+			FinSi
+		FinSi
+	Fin Si
+	//salida
+	Escribir "El nuevolimite de credito es: $",nuevolimitecredito
+FinFuncion
+//Ejercicio 19
+//19) Una compañía de paquetería internacional tiene servicio en algunos países de
+//América del Norte, América Central, América del Sur, Europa y Asia.
+//El costo por el servicio de paquetería se basa en el peso del paquete y la zona a la que va dirigido.
+//Definir zona1, zona2, zona3, zona4, zona5, lugar Como Caracter; Definir peso, zona, costoGramo, costoEnvio Como Real: Aquí se están definiendo varias variables. zona1, zona2, zona3, zona4, zona5 y lugar almacenarán caracteres, y peso, zona, costoGramo y costoEnvio almacenarán números reales.
+//	Escribir "Digite el peso:"; leer peso: Estas líneas muestran el mensaje "Digite el peso:" al usuario y luego toman un número ingresado por el usuario y lo almacenan en la variable peso.
+// Luego, se definen las zonas y se muestran al usuario.
+// Escribir "Digite el numero de zona: "; Leer zona: Estas líneas muestran el mensaje "Digite el numero de zona: " al usuario y luego toman un número ingresado por el usuario y lo almacenan en la variable zona.
+// Si peso > 5 Entonces: Este es un condicional que verifica si el peso del paquete es mayor que 5 kg.
+// Si el peso del paquete es mayor que 5 kg, se muestra un mensaje al usuario indicando que el paquete excede el límite de peso.
+// Si el peso del paquete no excede el límite de peso, entonces se verifica la zona ingresada por el usuario y se calcula el costo por gramo en consecuencia.
+//Finalmente, se calcula el costo de envío multiplicando el peso por el costo por gramo y se muestra al usuario.
+
+Funcion Ejercicio19()
+	Definir zona1, zona2, zona3, zona4, zona5, lugar Como Caracter
+	Definir peso, zona, costoGramo, costoEnvio Como Real
+	Escribir "Digite el peso:"
+	leer peso
+	zona1 <- "America del Norte"
+	zona2 <- "America Central"
+	zona3 <- "America del Sur"
+	zona4 <- "Europa"
+	zona5 <- "Asia"
+	Mostrar "1. ", zona1
+	Mostrar "2. ", zona2
+	Mostrar "3. ", zona3
+	Mostrar "4. ", zona4
+	Mostrar "5. ", zona5
+	Escribir "Digite el numero de zona: "
+	Leer zona
+	Si peso > 5 Entonces
+		Escribir "El peso del paquete excede el limite de 5kg. No se puede enviar."
+	SiNo
+		costoGramo <- 0
+		Segun zona hacer
+			caso 1:
+				lugar <- zona1
+				costoGramo <- 11
+			Caso 2:
+				lugar <- zona2
+				costoGramo <- 10
+			Caso 3:
+				lugar <- zona3
+				costoGramo <- 12
+			Caso 4: 
+				lugar <- zona4
+				costoGramo <- 24
+			caso 5:
+				lugar <- zona5
+				costoGramo <- 27
+			De Otro Modo:
+				Escribir "Zona invalida. Por favor selecione una zona valida"
+		FinSegun
+		costoEnvio <- peso * costoGramo
+		Escribir  "El costo de envio a ", lugar, " es: $", costoEnvio
+	FinSi
+FinFuncion
+//Ejercicio 20
+//20) Se desea realizar una estadistica de los pesos de los alumnos de la unemi, Al final deberá presentar cuantos alumnos hay por
+//rango de pesos y el promedio de cada rango.
+//Definir menos40kg, mas60kg, entre40y50kg, mas50yMenos60kg, mas50kg, totalAlumnos, sumaMenos40kg,sumaEntre40y50kg, sumaMas50yMenos60kg, sumaMas60kg, peso Como Real: 
+//Aquí se están definiendo varias variables que almacenarán números reales.
+//	Escribir "Digite el peso en KG del alumno:"; leer peso: Estas líneas muestran el mensaje "Digite el peso en KG del alumno:" al usuario y 
+//luego toman un número ingresado por el usuario y lo almacenan en la variable peso.
+// Luego, hay un bucle que se ejecuta mientras el peso ingresado por el usuario sea diferente de 0.
+// Dentro de este bucle, hay una serie de condicionales anidados que verifican el peso ingresado por el usuario y 
+//actualizan las variables correspondientes en consecuencia.
+// totalAlumnos <- totalAlumnos + 1: Esta línea incrementa el total de alumnos en 1 cada vez que se ejecuta el bucle.
+// Finalmente, se muestra al usuario un mensaje para ingresar el peso del siguiente alumno o digitar 0 si desea salir.
+
+Funcion Ejercicio20()
+	Definir menos40kg, mas60kg, entre40y50kg, mas50yMenos60kg, mas50kg, totalAlumnos, sumaMenos40kg,sumaEntre40y50kg, sumaMas50yMenos60kg, sumaMas60kg, peso Como Real
+	menos40kg <- 0
+	entre40y50kg <- 0
+	mas50yMenos60kg <- 0
+	mas60kg <- 0
+	totalAlumnos <- 0
+	sumaMenos40kg <- 0
+	sumaEntre40y50kg <- 0
+	sumaMas50yMenos60kg <- 0
+	sumaMas60kg <- 0
+	Escribir "Digite el peso en KG del alumno:"
+	leer peso
+	Mientras peso <> 0 Hacer
+		Si peso < 40 Entonces
+			menos40kg <- menos40kg + 1
+			sumaMenos40kg <- sumaMenos40kg + peso
+		SiNo
+			Si peso >= 40 y peso < 50 Entonces
+				entre40y50kg <- entre40y50kg + 1
+				sumaEntre40y50kg <- sumaEntre40y50kg + peso
+			SiNo
+				Si peso >= 50 y peso < 60 Entonces
+					mas50yMenos60kg <- mas50yMenos60kg + 1
+					sumaMas50yMenos60kg <- sumaMas50yMenos60kg + peso
+				SiNo
+					Si peso >= 60 Entonces
+						mas60kg <- mas60kg + 1
+						sumaMas60kg <- sumaMas60kg + peso
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		totalAlumnos <- totalAlumnos + 1
+		Mostrar "Digite 0 si desea salir"
+		Escribir "Digite el peso en KG del siguiente alumno:"
+		leer peso
+	FinMientras
+	Escribir "Estadistica de pesos de los ", totalAlumnos, " ingresados:"
+	Escribir "Menos de 40 kg: Alumnos: ", menos40kg, " Promedio: ", sumaMenos40kg - menos40kg
+	Escribir "Entre 40 y 50 kg: Alumnos: ", entre40y50kg, " Promedio: ", sumaEntre40y50kg / entre40y50kg
+	Escribir "Mas de 50 y menos de 60 kg, Alumnos: ", mas50yMenos60kg, " Promedio: ", sumaMas50yMenos60kg / mas50yMenos60kg
+	Escribir "Mas de 60 kg: Alumnos: ", mas60kg, " Promedio: ", sumaMas60kg / mas60kg
+FinFuncion
+//Ejercicio 21
+//21)Escribir un algoritmo que lea cuatro números y determine si el numero 1 es la mitad del numero 2; Y si el numero 3 es divisor del 4.
+//Definir num1, num2, num3, num4 Como Entero; Definir esMitad, esDivisor Como Logico: Aquí se están definiendo varias variables. num1, num2, num3 y num4 
+//almacenarán números enteros, y esMitad y esDivisor almacenarán valores lógicos.
+//	Las siguientes cuatro líneas muestran mensajes al usuario para ingresar cuatro números y luego toman los números ingresados por el usuario y 
+//los almacenan en las variables correspondientes.
+// Si num1 == num2 / 2 Entonces; esMitad <- Verdadero; FinSi: Este es un condicional que verifica si el primer número es la mitad del segundo. 
+//Si la condición es verdadera, entonces se establece esMitad en Verdadero.
+// Si num4 % num3 == 3 Entonces; esDivisor <- Verdadero; FinSi: Este es otro condicional que verifica si el tercer número es un divisor del cuarto. 
+//Si la condición es verdadera, entonces se establece esDivisor en Verdadero.
+// Finalmente, se muestran al usuario los valores de esMitad y esDivisor.
+
+Funcion Ejercicio21()
+	Definir num1, num2, num3, num4 Como Entero
+	Definir esMitad, esDivisor Como Logico
+	Escribir "Digite el primer numero"
+	leer num1
+	Escribir "Digite el segundo numero"
+	leer num2
+	Escribir "Digite el tercer numero"
+	leer num3 
+	Escribir "Digite el cuarto numero"
+	leer num4
+	esMitad <- Falso
+	esDivisor <- Falso
+	Si num1 == num2 / 2 Entonces
+		esMitad <- Verdadero
+	FinSi
+	Si num4 % num3 == 3 Entonces
+		esDivisor <- Verdadero
+	FinSi
+	Escribir "Numero 1 es la mitad del numero 2: ", esMitad
+	Escribir "numero 3 es divisor de numero 4 :", esDivisor
+FinFuncion
+//Ejercicio 22
+//22) Escribir un algoritmo que lea tres números y determine si el numero 1 es el doble del numero 2 y 20% menos que el numero 3.
+//Definir num1, num2, num3 como Entero: Aquí se están definiendo tres variables, num1, num2 y num3, que almacenarán números enteros.
+//	Las siguientes tres líneas muestran mensajes al usuario para ingresar tres números y luego toman los números ingresados por el usuario y los almacenan en las variables correspondientes.
+//	Si num1 = 2 * num2 Y num1 = num3 - (num3 * 0.2) Entonces: Este es un condicional que verifica si el primer número es el doble del segundo y el 20% menos que el tercero.
+//Escribir "El número 1 es el doble del número 2 y 20% menos que el número 3.": Si la condición anterior es verdadera, entonces se muestra este mensaje al usuario.
+//Sino: Este es otro condicional que se ejecuta si la primera condición es falsa.
+//Escribir "El número 1 no cumple las condiciones requeridas.": Si la condición anterior es falsa, entonces se muestra este mensaje al usuario.
+//FinSi: Esta línea indica el final del bloque condicional.
+
+Funcion Ejercicio22()
+	Definir num1, num2, num3 como Entero
+    Escribir "Ingrese el número 1:"
+    Leer num1
+    Escribir "Ingrese el número 2:"
+    Leer num2
+    Escribir "Ingrese el número 3:"
+    Leer num3
+    Si num1 = 2 * num2 Y num1 = num3 - (num3 * 0.2) Entonces
+		Escribir "El número 1 es el doble del número 2 y 20% menos que el número 3."
+	Sino
+		Escribir "El número 1 no cumple las condiciones requeridas."
+    FinSi
+FinFuncion
+//Ejercicio 23
+//23) Realizar un programa que ingrese un número presentar un mensaje equivalente a los días de la semana.
+//Definir diaSemana Como Caracter; Definir num Como Entero: Aquí se están definiendo dos variables, diaSemana que almacenará un carácter, y num que almacenará un número entero.
+//	Escribir "Ingrese un digito 1 - 7"; Leer num: Estas líneas muestran el mensaje "Ingrese un digito 1 - 7" al usuario y luego toman un número 
+//ingresado por el usuario y lo almacenan en la variable num.
+//	Si num > 0 y num <= 7 Entonces: Este es un condicional que verifica si el número ingresado por el usuario está entre 1 y 7.
+// Dentro de este bloque condicional, hay una estructura Segun que verifica el número ingresado por el usuario y establece la variable diaSemana en consecuencia.
+// Escribir "El numero ", num, " corresponde al dia: ", diaSemana: Si el número ingresado por el usuario está entre 1 y 7, entonces se muestra al 
+//usuario el día de la semana correspondiente.
+// SiNo; Escribir "Numero invalido, por favor ingrese un numero entre 1 - 7": Si el número ingresado por el usuario no está entre 1 y 7,
+//entonces se muestra este mensaje al usuario.
+
+Funcion Ejercicio23()
+	Definir diaSemana Como Caracter
+	Definir num Como Entero
+	Escribir "Ingrese un digito 1 - 7"
+	Leer num
+	diaSemana <- ""
+	Si num > 0 y num <= 7 Entonces
+		Segun num hacer
+			caso 1:
+				diaSemana <- "Lunes"
+			caso 2:
+				diaSemana <- "Martes"
+			caso 3:
+				diaSemana <- "Miercoles"
+			caso 4:
+				diaSemana <- "Jueves"
+			caso 5:
+				diaSemana <- "Viernes"
+			caso 6:
+				diaSemana <- "Sabado"
+			caso 7:
+				diaSemana <- "Domingo"
+			De Otro Modo: 
+		FinSegun
+		Escribir "El numero ", num, " corresponde al dia: ", diaSemana
+	SiNo
+		Escribir "Numero invalido, por favor ingrese un numero entre 1 - 7"
+	FinSi
+FinFuncion
+//Ejercicio 24
+//24) Realizar un programa que ingrese un número presentar un mensaje equivalente a los nombres de los meses del año
+//Definir mes Como Caracter; Definir num Como Entero: Aquí se están definiendo dos variables, mes que almacenará un carácter, y num que almacenará un número entero.
+//	Escribir "Ingrese un digito 1 - 12"; Leer num: Estas líneas muestran el mensaje "Ingrese un digito 1 - 12" al usuario y luego toman un número ingresado 
+//por el usuario y lo almacenan en la variable num.
+//	Si num > 0 y num <= 12 Entonces: Este es un condicional que verifica si el número ingresado por el usuario está entre 1 y 12.
+//	Dentro de este bloque condicional, hay una estructura Segun que verifica el número ingresado por el usuario y establece la variable mes en consecuencia		
+//Escribir "El numero ", num, " corresponde al mes: ", mes: Si el número ingresado por el usuario está entre 1 y 12, entonces se muestra al usuario el mes correspondiente.
+//SiNo; Escribir "Numero invalido, por favor ingrese un numero entre 1 - 12": Si el número ingresado por el usuario no está entre 1 y 12, entonces se muestra7 
+//este mensaje al usuario.
+Funcion Ejercicio24()
+	Definir mes Como Caracter
+	Definir num Como Entero
+	Escribir "Ingrese un digito 1 - 12"
+	Leer num
+	mes <- ""
+	Si num > 0 y num <= 12 Entonces
+		Segun num hacer
+			caso 1:
+				mes <- "Enero"
+			caso 2:
+				mes <- "Febrero"
+			caso 3:
+				mes <- "Marzo"
+			caso 4:
+				mes <- "Abril"
+			caso 5:
+				mes <- "Mayo"
+			caso 6:
+				mes <- "Junio"
+			caso 7:
+				mes <- "Julio"
+			caso 8:
+				mes <- "Agosto"
+			caso 9: 
+				mes <- "Septiembre"
+			caso 10:
+				mes <- "Octubre"
+			caso 11:
+				mes <- "Noviembre"
+			caso 12:
+				mes <- "Diciembre"
+		FinSegun
+		Escribir "El numero ", num, " corresponde al mes: ", mes
+	SiNo
+		Escribir "Numero invalido, por favor ingrese un numero entre 1 - 12"
+	FinSi
+FinFuncion
+//EJERCICIO 25
+//25) Se requiere un algoritmo para obtener la estatura promedio de un grupo de personas, cuyo
+//		número de personas se desconoce, el ciclo debe efectuarse siempre y cuando se tenga una estatura registrada.
+//definir i, n, estatura, sumaEstatura, promedioEstatura Como Real: Aquí se están definiendo varias variables que almacenarán números reales.
+//sumaEstatura=0: Esta línea inicializa la variable sumaEstatura en 0.
+//	escribir "ingrese las cantidad de personas"; leer n: Estas líneas muestran el mensaje "ingrese las cantidad de personas" al usuario y 
+//luego toman un número ingresado por el usuario y lo almacenan en la variable n.
+//	para i=1 hasta n con paso 1 Hacer: Este es un bucle que se ejecuta desde 1 hasta n.
+//Dentro de este bucle, se muestra un mensaje al usuario para ingresar la estatura de cada persona y luego se toma el número ingresado y se almacena en la variable estatura.
+//sumaEstatura = sumaEstatura + estatura: Esta línea suma la estatura ingresada a la variable sumaEstatura.
+//promedioEstatura = sumaEstatura / n: Esta línea calcula el promedio de estatura dividiendo la suma total de las estaturas por el número de personas.
+
+funcion Ejercicio25()
+	definir i, n, estatura, sumaEstatura, promedioEstatura Como Real
+	sumaEstatura=0
+	escribir "ingrese las cantidad de personas"
+	leer n 
+	para i=1 hasta n con paso 1 Hacer
+		escribir i, " ingrese la estatura en cm: "
+		leer estatura
+		sumaEstatura = sumaEstatura + estatura
+		promedioEstatura = sumaEstatura / n
+	FinPara
+	escribir "cantidad de personas: ",n," y el promedio de estatura es: ",promedioEstatura
+FinFuncion
+//EJERCICIO 26
+//26) Realizar un algoritmo para generar e imprimir los números pares comprendidos entre 0 y 100
+//definir i Como Entero: Aquí se está definiendo una variable llamada i que almacenará un número entero.
+//para i=2 hasta 100 con paso 2 Hacer: Este es un bucle que se ejecuta desde 2 hasta 100 en incrementos de 2. En otras palabras, recorre todos los números pares entre 2 y 100.
+//	escribir i: Dentro del bucle, esta línea imprime el valor actual de i, que será un número par entre 2 y 100.
+funcion Ejercicio26()
+	definir i Como Entero
+	para i=2 hasta 100 con paso 2 Hacer
+		escribir i
+	FinPara
+FinFuncion
+
+//EJERCICIO 27
+//27) Realizar un programa que realice la suma sucesiva de 10 números que ingrese por teclado,
+//presente el resultado de la suma acumulada.
+//definir i, val, suma Como Entero: Aquí se están definiendo tres variables, i, val y suma, que almacenarán números enteros.
+//suma=0: Esta línea inicializa la variable suma en 0.
+//para i=1 hasta 10 con paso 1 Hacer: Este es un bucle que se ejecuta desde 1 hasta 10.
+// Dentro de este bucle, se muestra un mensaje al usuario para ingresar un valor y luego se toma el número ingresado y se almacena en la variable val.
+// suma = suma + val: Esta línea suma el valor ingresado a la variable suma.
+// escribir suma: Esta línea imprime el valor actual de la suma.
+//FinPara: Esta línea indica el final del bucle.
+//escribir "la suma total es: ",suma: Finalmente, se muestra al usuario la suma total de los valores ingresados.
+
+funcion Ejercicio27()
+	definir i, val, suma Como Entero
+	suma=0 
+	para i=1 hasta 10 con paso 1 Hacer
+		escribir i," ingrese valor"
+		leer val
+		suma = suma + val
+		escribir suma
+	FinPara
+	escribir "la suma total es: ",suma
+FinFuncion
+
+//EJERCICIO 28
+//28) Se requiere un algoritmo para obtener la edad promedio de un grupo de N alumnos.
+//definir i, n, edad, suma, promedio Como real: Aquí se están definiendo varias variables que almacenarán números reales.
+//suma =0: Esta línea inicializa la variable suma en 0.
+//	escribir "ingrese la cantidad de n alumnos"; leer n: Estas líneas muestran el mensaje "ingrese la cantidad de n alumnos" al usuario y 
+//luego toman un número ingresado por el usuario y lo almacenan en la variable n.
+//	para i=1 hasta n con paso 1 Hacer: Este es un bucle que se ejecuta desde 1 hasta n.
+//Dentro de este bucle, se muestra un mensaje al usuario para ingresar una edad y luego se toma el número ingresado y se almacena en la variable edad.
+//suma = suma + edad: Esta línea suma la edad ingresada a la variable suma.
+//promedio = suma / n: Esta línea calcula el promedio de las edades dividiendo la suma total de las edades por el número de alumnos.
+//FinPara: Esta línea indica el final del bucle.
+//escribir "el promedio de las edades es: ",promedio: Finalmente, se muestra al usuario el promedio de las edades.
+funcion Ejercicio28()
+	definir i, n, edad, suma, promedio Como real
+	suma =0
+	escribir "ingrese la cantidad de n alumnos"
+	leer n
+	para i=1 hasta n con paso 1 Hacer
+		escribir i," ingrese la edad"
+		leer edad
+		suma = suma + edad
+		promedio = suma / n
+	FinPara
+	escribir "el promedio de las edades es: ",promedio
+FinFuncion
+
+//EJERCICIO 29
+//29) Una empresa tiene el registro de las horas y el valor hora que trabaja diariamente un
+//empleado durante los 20 días del mes. 
+//Requiere determinar el total de éstas, así como el sueldo
+//que recibirá por las horas trabajadas. Realizar el algoritmo que resuelva este problemas
+//valorXH, sueldo y horas se definen como números reales, lo que significa que pueden contener valores decimales. totalHoras también es un número real que se utilizará para almacenar las horas totales trabajadas.
+//c se define como un entero y se inicializa a 1. Esta variable parece ser utilizada como un contador para el bucle.
+//	totalHoras se inicializa a 0. Esta variable contendrá las horas totales trabajadas durante los 20 días.
+//	El programa solicita al usuario que ingrese el valor por hora trabajada.
+//	Luego, el programa entra en un bucle que se ejecuta 20 veces. En cada iteración del bucle, el programa solicita al usuario que ingrese las horas trabajadas del día y las suma a totalHoras.
+//	Al final del bucle, totalHoras contendrá la suma de todas las horas trabajadas durante los 20 días
+
+funcion Ejercicio29()
+	definir valorXH , sueldo, horas como real
+	definir totalHoras como real
+	definir c como entero
+	c=1;totalHoras=0
+	escribir "ingrese el valor por hora que se ha trabajado"
+	leer valorXH
+	
+	mientras c <= 20 hacer
+		escribir "ingrese las horas trabajadas del dia ",c
+		leer horas
+		totalHoras = totalHoras + horas
+		c=c+1		
+	Fin	mientras
+	sueldo = totalHoras*valorXH
+	Escribir "El total de horas trabajadas es: ",totalHoras
+	Escribir "El sueldo a recibir es: $",sueldo
+fin funcion
+//EJERCICIO 30
+//30) Un empleado de la tienda "Somos Más" 
+//1//realiza N ventas durante el día, 
+//se requiere saber
+//2//cuántas de ellas fueron mayores a $1000, 
+//3//cuántas de ellas fueron mayores a $500 pero menoreso iguales a $1000, 
+//4//y cuantas fueron menores o iguales a $500. Además, 
+//5//se requiere saber el monto de lo vendido en cada categoría 
+//6//y de forma global. Realizar un algoritmo
+//i, n, c1, c2, c3, precio, categoria1, categoria2, categoria3 y totalGlobal se definen como números reales.
+//Las variables c1, c2 y c3 se inicializan a 0 y parecen ser contadores para el número de ventas en cada categoría.
+//	Las variables categoria1, categoria2 y categoria3 también se inicializan a 0 y se utilizan para almacenar el total de ventas en cada categoría.
+// El programa solicita al usuario que ingrese la cantidad de compras (n).
+// Luego, el programa entra en un bucle que se ejecuta n veces. En cada iteración del bucle, el programa solicita al usuario que ingrese el precio de la venta.
+// Si el precio es mayor a 1000, se suma al total de la categoria1 y se incrementa el contador c1.
+// Si el precio es mayor a 500 pero menor o igual a 1000, se suma al total de la categoria2 y se incrementa el contador c2.
+// Si el precio es menor o igual a 500, se suma al total de la categoria3 y se incrementa el contador c3.
+funcion Ejercicio30()
+	definir i,n,c1,c2,c3, precio, categoria1, categoria2, categoria3, totalGlobal como real
+	c1=0;c2=0;c3=0
+	categoria1=0;categoria2=0;categoria3=0;totalGlobal=0
+	escribir "ingrese la n cantidad de compras"
+	leer n
+	para i=1 hasta n con paso 1 Hacer
+		escribir "ingrese el precio de la venta ",i,"°"
+		leer precio
+		si precio > 1000
+			categoria1 = categoria1 + precio
+			c1=c1+1
+		sino 
+			si precio > 500 y precio < 1000
+				categoria2 = categoria2 + precio
+				c2=c2+1
+			sino 
+				si precio <= 500
+					categoria3 = categoria3 + precio
+					c3=c3+1
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	totalGlobal = categoria1 + categoria2 + categoria3
+	escribir "cantidad comprada en la categoria 1: ",c1
+	escribir "el monto total de la categoria 1 es: ",categoria1
+	escribir "cantidad comprada en la categoria 2: ",c2
+	escribir "el monto total de la categoria 2 es: ",categoria2
+	escribir "cantidad comprada en la categoria 3: ",c3
+	escribir "el monto total de la categoria 3 es: ",categoria3
+	escribir "el global de todas las categorias es: ", totalGlobal
+FinFuncion
+
+//Ejercicio 31
+//Se dispone de las calificaciones de n alumnos del primer semestre
+//de la carrera de software de la unemi. Se tiene la nota final y la asignatura
+//('logica','requerimientos','calculos'). Se pide el promedio de
+//cada asignatura y el promedio general de todas las asignaturas de los
+//alumnos del primer semestre
+//n e i se definen como enteros. n parece ser el número de alumnos y i se usa como contador en el bucle.
+//nota, promedio_logica, promedio_requerimientos, promedio_calculos y promedio_general se definen como números reales. Estas variables se utilizan para 
+//almacenar las notas individuales y los promedios.
+//	Las variables suma_logica, suma_requerimientos y suma_calculos también se definen como números reales y se inicializan a 0. 
+//Estas variables se utilizan para sumar las notas de cada asignatura.
+//El programa solicita al usuario que ingrese la cantidad de alumnos (n).
+//Luego, el programa entra en un bucle que se ejecuta n veces. En cada iteración del bucle, el programa solicita al usuario que 
+//ingrese la nota de cada asignatura para el alumno actual y suma estas notas a las sumas correspondientes.
+//Después del bucle, el programa calcula los promedios dividiendo cada suma por n.
+//Finalmente, el programa calcula el promedio general sumando todas las sumas y dividiendo por el producto de 3 (el número de asignaturas) y n.
+
+Funcion Ejercicio31()
+	Definir n,i  como Entero
+	Definir nota, promedio_logica, promedio_requerimientos, promedio_calculos, promedio_general como Real
+	Definir suma_logica, suma_requerimientos, suma_calculos como Real
+	
+	promedio_logica <- 0
+	promedio_requerimientos <- 0
+	promedio_calculos <- 0
+	promedio_general <- 0
+	suma_logica <- 0
+	suma_requerimientos <- 0
+	suma_calculos <- 0
+	
+	Escribir "Ingrese la cantidad de alumnos: "
+	Leer n
+	
+	Para i <- 1 Hasta n Hacer
+		Escribir "Alumno ", i
+		Escribir "Ingrese la nota de la asignatura de logica: "
+		Leer nota
+		suma_logica <- suma_logica + nota
+		
+		Escribir "Ingrese la nota de la asignatura de requerimientos: "
+		Leer nota
+		suma_requerimientos <- suma_requerimientos + nota
+		
+		Escribir "Ingrese la nota de la asignatura de calculo: "
+		Leer nota
+		suma_calculos <- suma_calculos + nota
+	FinPara
+	
+	promedio_logica <- suma_logica / n
+	promedio_requerimientos <- suma_requerimientos / n
+	promedio_calculos <- suma_calculos / n
+	promedio_general <- (suma_logica + suma_requerimientos + suma_calculos) / (3 * n)
+	
+	Escribir "Promedio de la asignatura de logica: ", promedio_logica
+	Escribir "Promedio de la asignatura de requerimientos: ", promedio_requerimientos
+	Escribir "Promedio de la asignatura de calculo: ", promedio_calculos
+	Escribir "Promedio general de todas las asignaturas: ", promedio_general
+FinFuncion
+//Ejercicio 32
+//Se dispone de los sueldos y categorias de los profesores de la unemi.
+//segun la categoria estos reciben un bono adicional de porcentaje al sueldo:
+//categoria="Auxiliar" incremento del 10%
+//categoria="Agregado" incremento del 20%
+//categoria="principal" incremento del 50%
+//Se pide obtener el promedio de los sueldos y del bono de cada categoria
+//El programa termina cuando se ingresa una categoria inexistente
+//sueldo, promedioSueldos, bono, promedioBonos se definen como números reales. Estas variables se utilizan para almacenar el sueldo individual, el bono y los promedios correspondientes.
+//	categoria se define como carácter y se utiliza para almacenar la categoría del profesor.
+//Las variables contadorAuxiliar, contadorAgregado, contadorPrincipal se definen como números reales y se utilizan para contar el número de profesores en cada categoría.
+//Las variables totalSueldos y totalBonos también se definen como números reales y se utilizan para sumar los sueldos y bonos de todos los profesores.
+//El programa solicita al usuario que ingrese la categoría del profesor.
+//Luego, el programa entra en un bucle que se ejecuta mientras la categoría ingresada sea Auxiliar, Agregado o Principal. En cada iteración del bucle, 
+//el programa solicita al usuario que ingrese el sueldo del profesor.
+//Dependiendo de la categoría del profesor, el programa calcula el bono como un porcentaje del sueldo (10% para Auxiliar, 20% para Agregado, 
+//50% para Principal) e incrementa el contador correspondiente.
+//El programa suma el sueldo y el bono a los totales correspondientes y a los promedios.
+//Al final del bucle, los promedios contienen la suma de los sueldos/bonos dividida por el número total de profesores, y los totales contienen la 
+//suma de todos los sueldos/bonos. Los contadores contienen el número de profesores en cada categoría.
+
+Funcion Ejercicio32()
+	Definir sueldo, promedioSueldos, bono, promedioBonos como Real
+    Definir categoria como Carácter
+    Definir contadorAuxiliar, contadorAgregado, contadorPrincipal Como Real
+    Definir totalSueldos, totalBonos como Real
+    contadorAuxiliar = 0
+    contadorAgregado = 0
+    contadorPrincipal = 0
+    totalSueldos = 0
+    totalBonos = 0
+	promedioSueldos = 0
+	promedioBonos = 0
+    Escribir "Ingrese la categoría del profesor (Auxiliar, Agregado, Principal):"
+    Leer categoria
+    Mientras categoria = "Auxiliar" o categoria = "Agregado" o categoria = "Principal" hacer
+        Escribir "Ingrese el sueldo del profesor:"
+        Leer sueldo
+        Si categoria = "Auxiliar" entonces
+            bono = sueldo * 0.10
+            contadorAuxiliar = contadorAuxiliar + 1
+        Fin Si
+        Si categoria = "Agregado" entonces
+            bono = sueldo * 0.20
+            contadorAgregado <- contadorAgregado + 1
+        Fin Si
+        Si categoria = "Principal" entonces
+            bono = sueldo * 0.50
+            contadorPrincipal <- contadorPrincipal + 1
+        Fin Si
+        promedioSueldos = promedioSueldos + sueldo
+        promedioBonos = promedioBonos + bono
+        totalSueldos = totalSueldos + sueldo
+        totalBonos = totalBonos + bono
+        Escribir "Ingrese la categoría del profesor (Auxiliar, Agregado, Principal):"
+        Leer categoria
+    Fin Mientras
+    promedioSueldos = promedioSueldos / (contadorAuxiliar + contadorAgregado + contadorPrincipal)
+    promedioBonos = promedioBonos / (contadorAuxiliar + contadorAgregado + contadorPrincipal)
+    Escribir "El promedio de sueldos es: ", promedioSueldos
+    Escribir "El promedio de bonos es: ", promedioBonos
+    Escribir "El total de sueldos es: ", totalSueldos
+    Escribir "El total de bonos es: ", totalBonos
+FinFuncion
+
+//Ejercicio 33
+//	Dado una serie de n cantidad de viajes dado cada pasaje y su recorrido determinar
+//	el precio de cada pasaje segun el recorrido en kilometros
+//	si el recorrido es hasta 100 km el pasaje no tiene incremento
+//	si el reccorido es mas de 100 km el pasaje tiene un incremento
+//	del 20%. Presentar el promedio y la cantidad de pasajes con recorrido
+//  hasta 100km y mayor de 100 km.	
+//n, i, recorrido, precio, sumaPrecios, contador100km y contadorMas100km se definen como enteros. promedio se define como un número real.
+//Las variables contador100km y contadorMas100km se inicializan a 0 y se utilizan para contar el número de pasajes que tienen un recorrido de 100 km o menos y más de 100 km, respectivamente.
+//	La variable sumaPrecios también se inicializa a 0 y se utiliza para sumar los precios de todos los pasajes.
+//El programa solicita al usuario que ingrese la cantidad de pasajes (n).
+//Luego, el programa entra en un bucle que se ejecuta n veces. En cada iteración del bucle, el programa solicita al usuario que ingrese el recorrido en kilómetros del pasaje.
+//Si el recorrido es de 100 km o menos, el precio del pasaje es igual al recorrido y se incrementa el contador contador100km.
+//Si el recorrido es de más de 100 km, el precio del pasaje es igual al recorrido multiplicado por 1.2 y se incrementa el contador contadorMas100km.
+//El programa suma el precio del pasaje a la suma total de precios (sumaPrecios).
+
+Funcion Ejercicio33()
+	Definir n, i, recorrido, precio, sumaPrecios, contador100km, contadorMas100km Como Entero
+	Definir promedio Como Real
+	
+	contador100km <- 0
+	contadorMas100km <- 0
+	sumaPrecios <- 0
+	
+	Escribir "Ingrese la cantidad de pasajes: "
+	Leer n
+	
+	Para i <- 1 Hasta n Hacer
+		Escribir "Ingrese el recorrido en kilómetros del pasaje ", i, ": "
+		Leer recorrido
+		
+		Si recorrido <= 100 Entonces
+			precio <- recorrido
+			contador100km <- contador100km + 1
+		Sino
+			precio <- recorrido * 1.2
+			contadorMas100km <- contadorMas100km + 1
+		Fin Si
+		
+		sumaPrecios <- sumaPrecios + precio
+	Fin Para
+	
+	promedio <- sumaPrecios / n
+	
+	Escribir "El promedio de precios es: ", promedio
+	Escribir "Cantidad de pasajes con recorrido hasta 100 km: ", contador100km
+	Escribir "Cantidad de pasajes con recorrido mayor a 100 km: ", contadorMas100km
+	
+FinFuncion
+
+//Ejercicio 34
+//	Diseñar un algoritmo que lea y presente una serie de números distintos de
+//	cero. El algoritmo debe terminar con un valor cero que no se debe presentar.
+//	Finalmente se desea obtener la cantidad y el promedio de los valores distintos
+//	de cero
+//num, cantidad y suma se definen como enteros. promedio se define como un número real.
+//Las variables cantidad y suma se inicializan a 0. cantidad se utiliza para contar el número de números ingresados que son distintos de cero, y suma se utiliza para sumar estos números.
+//El programa solicita al usuario que ingrese una serie de números, uno por uno. El usuario debe ingresar 0 para terminar la serie.
+//Luego, el programa entra en un bucle que se ejecuta mientras el número ingresado sea distinto de cero. En cada iteración del bucle, 
+//el programa incrementa cantidad en 1 y suma el número ingresado a suma.
+//Después del bucle, si cantidad es distinto de cero (es decir, si el usuario ingresó al menos un número distinto de cero), 
+//el programa calcula el promedio dividiendo suma por cantidad.
+
+Funcion Ejercicio34()
+	Definir num, cantidad, suma Como Entero
+	Definir promedio Como Real
+	
+	cantidad <- 0
+	suma <- 0
+	
+	Escribir "Ingrese una serie de números distintos de cero (ingrese 0 para terminar):"
+	Leer num
+	
+	Mientras num <> 0 Hacer
+		cantidad <- cantidad + 1
+		suma <- suma + num
+		
+		Escribir "Número leído:", num
+		
+		Leer num
+	Fin Mientras
+	
+	Si cantidad <> 0 Entonces
+		promedio <- suma / cantidad
+		
+		Escribir "Cantidad de números distintos de cero:", cantidad
+		Escribir "Promedio de los números distintos de cero:", promedio
+	Sino
+		Escribir "No se ingresaron números distintos de cero."
+	Fin Si
+	
+FinFuncion
+
+//Ejercicio 35
+//	Dada una serie de números positivos lea y presente el numero.
+//	El algoritmo debe terminar con un valor negativo que no se debe presentar.
+//	Finalmente se desea obtener la cantidad y el total de los números positivos múltiplos de 3
+//num, cantidad y total se definen como enteros.
+//Las variables cantidad y total se inicializan a 0. cantidad se utiliza para contar el número de números ingresados que son múltiplos de 3, 
+//y total se utiliza para sumar estos números.
+//El programa solicita al usuario que ingrese una serie de números, uno por uno. El usuario debe ingresar un número negativo para terminar la serie.
+//Luego, el programa entra en un bucle que se ejecuta mientras el número ingresado sea mayor o igual a cero. En cada iteración del bucle, 
+//si el número ingresado es múltiplo de 3, el programa incrementa cantidad en 1 y suma el número ingresado a total.
+//Después del bucle, si cantidad es distinto de cero (es decir, si el usuario ingresó al menos un número múltiplo de 3), 
+//el programa muestra la cantidad de números múltiplos de 3 y su suma total. 
+
+Funcion Ejercicio35()
+	Definir num, cantidad, total Como Entero
+	
+	cantidad <- 0
+	total <- 0
+	
+	Escribir "Ingrese una serie de números positivos (ingrese un número negativo para terminar):"
+	Leer num
+	
+	Mientras num >= 0 Hacer
+		Si num % 3 = 0 Entonces
+			cantidad <- cantidad + 1
+			total <- total + num
+		Fin Si
+		
+		Escribir "Número leído:", num
+		
+		Leer num
+	Fin Mientras
+	
+	Si cantidad <> 0 Entonces
+		Escribir "Cantidad de números positivos múltiplos de 3:", cantidad
+		Escribir "Total de los números positivos múltiplos de 3:", total
+	Sino
+		Escribir "No se ingresaron números positivos múltiplos de 3."
+		Fin Si
+FinFuncion
+Algoritmo principal
+//Ejercicio1()
+//Ejercicio2()
+//Ejercicio3()
+//Ejercicio4()
+//Ejercicio5()
+//Ejercicio6()
+//Ejercicio7()
+//Ejercicio8()
+//Ejercicio9()
+//Ejercicio10()
+//Ejercicio11()
+//Ejercicio12()
+//Ejercicio13()
+//Ejercicio14()
+//Ejercicio15()
+//Ejercicio16()
+//Ejercicio17()
+//Ejercicio18()
+//Ejercicio19()
+//Ejercicio20()
+//Ejercicio21()
+//Ejercicio22()
+//Ejercicio23()
+//Ejercicio24()
+//Ejercicio25()
+//Ejercicio26()
+//Ejercicio27()
+//Ejercicio28()
+//Ejercicio29()
+//Ejercicio30()
+//Ejercicio31()
+//Ejercicio32()
+//Ejercicio33()
+//Ejercicio34()
+//Ejercicio35()
